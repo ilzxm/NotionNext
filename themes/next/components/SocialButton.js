@@ -1,5 +1,6 @@
 import BLOG from '@/blog.config'
 import React from 'react'
+import DarkModeButton from '@/components/DarkModeButton'
 
 /**
  * 社交联系方式按钮组
@@ -27,9 +28,10 @@ const SocialButton = () => {
       {BLOG.CONTACT_EMAIL && <a target='_blank' rel='noreferrer' title={'email'} href={`mailto:${BLOG.CONTACT_EMAIL}`} >
         <i className='fas fa-envelope transform hover:scale-125 duration-150'/>
       </a>}
-      <a target='_blank' rel='noreferrer' title={'RSS'} href={'/feed'} >
+      {BLOG.ENABLE_RSS && <a target='_blank' rel='noreferrer' title={'RSS'} href={'/feed'} >
         <i className='fas fa-rss transform hover:scale-125 duration-150'/>
-      </a>
+      </a>}
+      <DarkModeButton/>
     </div>
   </div>
 }
