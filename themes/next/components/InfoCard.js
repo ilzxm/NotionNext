@@ -18,7 +18,7 @@ const InfoCard = (props) => {
   }
   return <>
     <div className='flex flex-col items-center justify-center '>
-        <div className='hover:rotate+45 hover:scale-125 transform duration-200 cursor-pointer' onClick={ handleChangeDarkMode }>
+        <div className='hover:rotate--45 hover:scale-125 transform duration-200 cursor-pointer' onClick={ handleChangeDarkMode }>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={siteInfo?.icon} className='rounded-full' width={120} alt={BLOG.AUTHOR}/>
         </div>
