@@ -19,7 +19,7 @@ const InfoCard = (props) => {
   return <>
     <style jsx>{`
     .rotate-back:hover {
-      transform: rotate(-45deg) scale(1.25);
+      transform: rotate(180deg) scale(1.25);
       cursor: pointer;
       transition: transform 200ms ease-in-out;
     }
