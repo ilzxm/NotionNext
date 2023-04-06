@@ -1,15 +1,13 @@
 import BLOG from '@/blog.config'
 import React from 'react'
-import handleChangeDarkMode from '@/components/DarkModeButton'
-import { useGlobal } from '@/lib/global'
+import DarkModeButton from '@/components/DarkModeButton'
 
 /**
  * 社交联系方式按钮组
- * @returns {document}
+ * @returns {JSX.Element}
  * @constructor
  */
 const SocialButton = () => {
-  const { isDarkMode } = useGlobal()
   return <div className='w-52 justify-center flex-wrap flex'>
     <div className='space-x-3 text-xl text-gray-600 dark:text-gray-400 text-center'>
       {BLOG.CONTACT_GITHUB && <a target='_blank' rel='noreferrer' title={'github'} href={BLOG.CONTACT_GITHUB} >
@@ -33,8 +31,7 @@ const SocialButton = () => {
       {BLOG.ENABLE_RSS && <a target='_blank' rel='noreferrer' title={'RSS'} href={'/feed'} >
         <i className='fas fa-rss transform hover:scale-125 duration-150'/>
       </a>}
-      <i id='darkModeButton' className={`hover:scale-125 cursor-pointer transform duration-200 fas ${isDarkMode ? 'fa-sun' : 'fa-moon'}`}
-         onClick={handleChangeDarkMode} />
+      <DarkModeButton/>
     </div>
   </div>
 }
