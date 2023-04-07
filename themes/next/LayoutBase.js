@@ -13,6 +13,7 @@ import React from 'react'
 import CONFIG_NEXT from './config_next'
 import Live2D from '@/components/Live2D'
 import BLOG from '@/blog.config'
+import JumpToCommentButton from '@/themes/hexo/components/JumpToCommentButton'
 
 /**
  * 基础布局 采用左右两侧布局，移动端使用顶部导航栏
@@ -20,7 +21,7 @@ import BLOG from '@/blog.config'
  * @constructor
  */
 const LayoutBase = (props) => {
-  const { children, headerSlot, meta, sideBarSlot, floatSlot, rightAreaSlot, siteInfo } = props
+  const { children, headerSlot, meta, sideBarSlot, floatSlot, rightAreaSlot, siteInfo, post } = props
   const { onLoading } = useGlobal()
   const targetRef = React.useRef(null)
   const floatButtonGroup = React.useRef(null)
@@ -80,7 +81,10 @@ const LayoutBase = (props) => {
       <div ref={floatButtonGroup} className='right-8 bottom-12 lg:right-2 fixed justify-end z-20 font-sans'>
         <div className={(show ? 'animate__animated ' : 'hidden') + ' animate__fadeInUp rounded-md glassmorphism justify-center duration-500  animate__faster flex space-x-2 items-center cursor-pointer '}>
           <JumpToTopButton percent={percent}/>
-          <JumpToBottomButton />
+          {post !== undefined
+            ? <JumpToCommentButton />
+            : <JumpToBottomButton />
+          }
           <FloatDarkModeButton/>
           {floatSlot}
         </div>
