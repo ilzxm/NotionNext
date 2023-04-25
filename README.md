@@ -28,8 +28,14 @@
 
 ## 我要如何开始？
 
-只需几分钟即可搭建您的个人站点，查看教程 [教程说明](https://tangly1024.com/article/notion-next) 
+只需几分钟即可搭建您的个人站点：
 
+- [快速部署教程 - 多种方案可供选择](https://tangly1024.com/article/notion-next) 
+
+- [个性配置手册 - 如何配置功能插件](https://tangly1024.com/article/notion-next-guide) 
+
+- [二次开发指引 - 如何进行本地开发](https://tangly1024.com/article/how-to-develop-with-notion-next)
+ 
 
 ## 致谢
 感谢Craig Hart发起的Nobelium项目
@@ -142,6 +148,13 @@
     <a href="https://github.com/sudeakq" style="display:inline-block;width:80px"><img src="https://avatars.githubusercontent.com/u/102792219" width="64px;"  alt="Sude Akgün"/><br/><sub><b>Sude Akgün</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=sudeakq" title="sudeakq" >🔧 🐛</a>
   </td>
 
+  <td align="center">
+    <a href="https://github.com/fgprodigal" style="display:inline-block;width:80px"><img src="https://avatars.githubusercontent.com/u/769910" width="64px;"  alt="Ray"/><br/><sub><b>Ray</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=fgprodigal" title="Ray" >🔧 🐛</a>
+  </td>
+
+  <td align="center">
+    <a href="https://github.com/hongzzz" style="display:inline-block;width:80px"><img src="https://avatars.githubusercontent.com/u/25585061" width="64px;"  alt="Hongzzz"/><br/><sub><b>Hongzzz</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=hongzzz" title="hongzzz" >🔧 🐛</a>
+  </td>
 </tr>
 </table>
 
