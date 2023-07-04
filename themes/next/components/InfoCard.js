@@ -2,7 +2,7 @@ import BLOG from '@/blog.config'
 import React from 'react'
 import SocialButton from './SocialButton'
 import { useGlobal } from '@/lib/global'
-import { saveDarkModeToCookies } from '@/lib/theme'
+import { saveDarkModeToCookies } from '@/themes/theme'
 
 const InfoCard = (props) => {
   const { siteInfo } = props
