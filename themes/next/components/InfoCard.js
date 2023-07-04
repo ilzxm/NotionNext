@@ -1,8 +1,8 @@
 import BLOG from '@/blog.config'
 import React from 'react'
 import SocialButton from './SocialButton'
-import { useGlobal } from '@/lib/global'
 import { saveDarkModeToCookies } from '@/themes/theme'
+import { useGlobal } from '@/lib/global'
 
 const InfoCard = (props) => {
   const { siteInfo } = props
@@ -17,21 +17,14 @@ const InfoCard = (props) => {
     htmlElement.classList?.add(newStatus ? 'dark' : 'light')
   }
   return <>
-    <style jsx>{`
-    .rotate-back:hover {
-      transform: rotate(180deg) scale(1.25);
-      cursor: pointer;
-      transition: transform 200ms ease-in-out;
-    }
-  `}</style>
     <div className='flex flex-col items-center justify-center '>
-        <div className='rotate-back duration-200 cursor-pointer' onClick={ handleChangeDarkMode }>
+      <div className='hover:rotate-180 hover:scale-125 transform duration-200 cursor-pointer' onClick={ handleChangeDarkMode }>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={siteInfo?.icon} className='rounded-full' width={120} alt={BLOG.AUTHOR}/>
-        </div>
-        <div className='text-2xl font-serif dark:text-white py-2 hover:scale-105 transform duration-200'>{BLOG.AUTHOR}</div>
-        <div className='font-light dark:text-white py-2 hover:scale-105 transform duration-200 text-center'>{BLOG.BIO}</div>
-        <SocialButton/>
+      </div>
+      <div className='text-2xl font-serif dark:text-white py-2 hover:scale-105 transform duration-200'>{BLOG.AUTHOR}</div>
+      <div className='font-light dark:text-white py-2 hover:scale-105 transform duration-200 text-center'>{BLOG.BIO}</div>
+      <SocialButton/>
     </div>
   </>
 }
