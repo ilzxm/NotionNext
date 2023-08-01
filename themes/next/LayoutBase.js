@@ -9,7 +9,7 @@ import SideAreaRight from './components/SideAreaRight'
 import TopNav from './components/TopNav'
 import { useGlobal } from '@/lib/global'
 import { useEffect, useRef, useState } from 'react'
-import CONFIG_NEXT from './config_next'
+import CONFIG_NEXT from './config'
 import Live2D from '@/components/Live2D'
 import BLOG from '@/blog.config'
 
