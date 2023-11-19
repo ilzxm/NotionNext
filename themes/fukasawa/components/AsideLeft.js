@@ -7,8 +7,6 @@ import SiteInfo from './SiteInfo'
 import Catalog from './Catalog'
 import Announcement from './Announcement'
 import { useRouter } from 'next/router'
-import DarkModeButton from '@/components/DarkModeButton'
-import SocialButton from './SocialButton'
 import { useFukasawaGlobal } from '..'
 import CONFIG from '@/themes/fukasawa/config'
 import { AdSlot } from '@/components/GoogleAdsense'
@@ -97,12 +95,7 @@ function AsideLeft(props) {
 
             <section className='flex flex-col'>
                 <div className='w-12 my-4' />
-                <SocialButton />
                 <SiteInfo />
-            </section>
-
-            <section className='flex justify-center dark:text-gray-200 pt-4'>
-                <DarkModeButton />
             </section>
 
             <section className='sticky top-0 pt-12'>

@@ -1,4 +1,3 @@
-import Vercel from '@/components/Vercel'
 import { siteConfig } from '@/lib/config'
 
 export const Footer = (props) => {
@@ -12,7 +11,6 @@ export const Footer = (props) => {
      <div className="my-4 text-sm leading-6">
        <div className="flex align-baseline justify-start flex-wrap space-x-6">
          <div> © {siteConfig('AUTHOR')} {copyrightDate}  </div>
-         <Vercel />
        </div>
      </div>
    </footer>
