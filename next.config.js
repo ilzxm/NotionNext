@@ -19,7 +19,9 @@ function scanSubdirectories(directory) {
     const stats = fs.statSync(fullPath)
 
     // landing主题比较特殊，不在可切换的主题中显示
-    if (stats.isDirectory() && file !== 'landing') {
+    if (stats.isDirectory() &&
+      (file === 'next' || file === 'gitbook' || file === 'example' || file === 'nav' ||
+        file === 'nobelium' || file === 'fukasawa')) {
       subdirectories.push(file)
     }
   })
